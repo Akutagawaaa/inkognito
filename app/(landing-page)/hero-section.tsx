@@ -56,7 +56,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="font-josefin sans text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Your Digital Identity,{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
                 Reinvented
@@ -91,10 +91,10 @@ export default function HeroSection() {
             className="hidden md:block"
           >
             <Image
-              src="/assets/ReadingSideDoodle.svg"
+              src="/assets/earth.gif"
               alt="hero image"
-              width={500}
-              height={500}
+              width={800}
+              height={800}
               className="w-full h-auto"
             />
           </motion.div>
