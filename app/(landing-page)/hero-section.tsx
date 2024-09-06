@@ -15,7 +15,7 @@ const tabs = [
     description: 'Get your DID on the blockchain.',
     color: 'bg-emerald-100',
     textColor: 'text-emerald-600',
-    image: '/assets/PlantDoodle.svg',
+    image: '/images/crete Did.png',
   },
   {
     icon: <IconShare className="w-6 h-6 text-indigo-600" />,
@@ -23,7 +23,7 @@ const tabs = [
     description: 'Create once, share and use everywhere',
     color: 'bg-indigo-100',
     textColor: 'text-indigo-600',
-    image: '/assets/GroovyDoodle.svg',
+    image: '/images/share.png',
   },
   {
     icon: <IconLockSquareRounded className="w-6 h-6 text-rose-600" />,
@@ -31,7 +31,7 @@ const tabs = [
     description: 'Control who sees your information',
     color: 'bg-rose-100',
     textColor: 'text-rose-600',
-    image: '/assets/CoffeeDoddle.svg',
+    image: '/images/privacy1.jpeg',
   },
   {
     icon: <IconBriefcase className="w-6 h-6 text-amber-600" />,
@@ -39,7 +39,7 @@ const tabs = [
     description: 'Discover developer opportunities.',
     color: 'bg-amber-100',
     textColor: 'text-amber-600',
-    image: '/assets/RunningDoodle.svg',
+    image: '/images/find job.png',
   },
 ]
 
@@ -64,7 +64,7 @@ export default function HeroSection() {
             </h1>
             <p className="font-sans text-xl md:text-2xl mb-8 text-gray-600">
               Create Once, Identify Everywhere with{' '}
-              <span className="font-medium text-purple-600">IdentiFi</span>
+              <span className="font-medium  text-purple-600">inKognito</span>
             </p>
             <Link href={"/onboard"}>
               <Button size="lg" className="text-lg rounded-full px-8 py-6 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all duration-300">
@@ -107,7 +107,7 @@ export default function HeroSection() {
           className="mt-24"
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-12 text-center">
-            Discover IdentiFi Features
+            Discover inKognito Features
           </h2>
           <div className={`grid ${isSmallScreen ? 'grid-cols-1 gap-6' : 'grid-cols-2 md:grid-cols-4 gap-4'}`}>
             {tabs.map((tab) => (
