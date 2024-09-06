@@ -1,0 +1,41 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\Sushant Shrivastava\\Downloads\\identiFi-main (1)\\identiFi-main\\contracts\\identiFi.sol": {
+      "lastModificationDate": 1725558120808,
+      "contentHash": "499433a2acb4bbedeba7a488f599091f",
+      "sourceName": "contracts/identiFi.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IdentiFi"
+      ]
+    }
+  }
+}
