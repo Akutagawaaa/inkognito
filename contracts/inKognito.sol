@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract IdentiFi {
+contract inKognito {
     struct User {
         string firstName;
         string lastName;
@@ -202,7 +202,6 @@ contract IdentiFi {
         return users[username].visibility;
     }
 }
-
 
 
 

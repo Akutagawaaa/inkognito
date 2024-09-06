@@ -16,7 +16,7 @@ const FormFields: React.FC<FormFieldsProps> = ({ formData, handleChange }) => (
         <FormLabel className="text-sm">First name *</FormLabel>
         <FormControl>
           <Input
-            placeholder="Satoshi"
+            placeholder="Stephen"
             onChange={(e) => handleChange("first_name", e.target.value)}
             value={formData.first_name}
           />
@@ -27,7 +27,8 @@ const FormFields: React.FC<FormFieldsProps> = ({ formData, handleChange }) => (
         <FormLabel className="w-60 text-sm">Last name *</FormLabel>
         <FormControl>
           <Input
-            placeholder="Nakamoto"
+            placeholder="Simon
+            "
             onChange={(e) => handleChange("last_name", e.target.value)}
             value={formData.last_name}
           />
@@ -39,7 +40,7 @@ const FormFields: React.FC<FormFieldsProps> = ({ formData, handleChange }) => (
       <FormLabel className="w-60 text-sm">Username *</FormLabel>
       <FormControl>
         <Input
-          placeholder="satoshinakamoto"
+          placeholder="stephen_simon"
           onChange={(e) => handleChange("username", e.target.value)}
           value={formData.username}
         />
@@ -51,7 +52,7 @@ const FormFields: React.FC<FormFieldsProps> = ({ formData, handleChange }) => (
         <FormLabel className="text-sm">Home Address *</FormLabel>
         <FormControl>
           <Input
-            placeholder="18670 Coastal Highway"
+            placeholder="Nepal"
             onChange={(e) => handleChange("home_address", e.target.value)}
             value={formData.home_address}
           />
@@ -75,7 +76,7 @@ const FormFields: React.FC<FormFieldsProps> = ({ formData, handleChange }) => (
         <FormLabel className="text-sm">Education *</FormLabel>
         <FormControl>
           <Input
-            placeholder="Harvard"
+            placeholder="University"
             onChange={(e) => handleChange("education", e.target.value)}
             value={formData.education}
           />
@@ -99,7 +100,7 @@ const FormFields: React.FC<FormFieldsProps> = ({ formData, handleChange }) => (
       <FormLabel className="text-sm">Email *</FormLabel>
       <FormControl>
         <Input
-          placeholder="satoshinakamoto@gmail.com"
+          placeholder="stephen.simon@gmail.com"
           onChange={(e) => handleChange("email", e.target.value)}
           value={formData.email}
         />
@@ -110,7 +111,7 @@ const FormFields: React.FC<FormFieldsProps> = ({ formData, handleChange }) => (
       <FormLabel className="text-sm">Phone number *</FormLabel>
       <FormControl>
         <Input
-          placeholder="+123456789-0"
+          placeholder="+91 99929 XXXXX"
           onChange={(e) => handleChange("phone_number", e.target.value)}
           value={formData.phone_number}
         />
@@ -121,7 +122,8 @@ const FormFields: React.FC<FormFieldsProps> = ({ formData, handleChange }) => (
       <FormLabel className="text-sm">Job Title *</FormLabel>
       <FormControl>
         <Input
-          placeholder="Designer"
+          placeholder="Blockchain  Developer"
+
           onChange={(e) => handleChange("job_title", e.target.value)}
           value={formData.job_title}
         />

@@ -284,19 +284,19 @@ export default function CreateProfile() {
   return (
     <div
       className="flex flex-col md:flex-row items-center md:items-start justify-between 
-    space-y-4 md:space-y-0 md:space-x-10 pt-20 pb-20 px-4 md:px-16"
+    space-y-4 md:space-y-0 md:space-x-10 pt-12 pb-20 px-10"
     >
       <div>
-        <div className="md:text-4xl text-xl font-medium w-3/3 pb-3">
-          Creating a DID is a breeze with{" "}
-          <span className="text-sky-500">identiFi</span>
+        <div className="md:text-4xl text-xl text-center  pb-5">
+        Empowering Your Digital Identity with{" "}
+         <span className="font-bold">in<span className="text-sky-500">Kognito</span></span> 
         </div>
         <Toaster />
         <UserProfileDisplay formData={formData} countryCode={countryCode} />
       </div>
 
       <Form {...form}>
-        <div className="w-full md:w-2/3">
+        <div className="w-full pt-20 md:w-2/3">
           {!submitted ? (
             <form onSubmit={onSubmit} className="space-y-4 w-full">
               <FormFields

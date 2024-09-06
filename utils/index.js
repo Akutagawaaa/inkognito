@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
-import identiFi from "./identiFi.json";
+import identiFi from "./inKognito.json";
 
 export const contract = async () => {
   const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -7,7 +7,7 @@ export const contract = async () => {
   if (ethereum) {
     const signer = provider.getSigner();
     const contractReader = new ethers.Contract(
-      "0x041b5F12624D072A599F928e6143579D5B70Bd49",
+      "0xB5f1a8a8F8824A99C26644C7d6C4F911C2038136",
       identiFi.abi,
       signer
     );

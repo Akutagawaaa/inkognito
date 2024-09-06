@@ -1,4 +1,3 @@
-// components/UserProfileDisplay.tsx
 import React from "react";
 import {
   IconBrandInstagram,
@@ -22,106 +21,99 @@ const UserProfileDisplay: React.FC<UserProfileDisplayProps> = ({
   formData,
   countryCode,
 }) => (
-  <div className="relative border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]">
-    <div className="h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -left-[17px] top-[72px] rounded-s-lg"></div>
-    <div className="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -left-[17px] top-[124px] rounded-s-lg"></div>
-    <div className="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -left-[17px] top-[178px] rounded-s-lg"></div>
-    <div className="h-[64px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -right-[17px] top-[142px] rounded-e-lg"></div>
-    <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
-      <div className="flex flex-col items-center justify-center pt-4 mx-3">
-        <div className="text-center flex flex-col items-center justify-center">
+  <div className="relative border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[900px]">
+    {/* Laptop screen frame */}
+    {/* <div className="h-[14px] w-[120px] bg-gray-800 dark:bg-gray-800 absolute -top-[28px] left-1/2 transform -translate-x-1/2 rounded-t-lg"></div> */}
+    <div className="h-[8px] w-[8px] bg-gray-600 dark:bg-gray-600 absolute top-[6px] left-1/2 transform -translate-x-1/2 rounded-full"></div>
+    <div className="rounded-[2rem] overflow-hidden w-[872px] h-[572px] bg-white dark:bg-gray-800">
+      <div className="flex h-full">
+        {/* Left column */}
+        <div className="w-1/3 p-6 bg-gray-100 dark:bg-gray-700 flex flex-col items-center justify-start">
           <img
-            className="w-20 h-20 object-cover object-center p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+            className="w-40 h-40 object-cover object-center p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
             src={formData.imageUrl || "/images/avatar.jpeg"}
-            alt="Bordered avatar"
+            alt="Profile avatar"
           />
-          <p className="font-medium text-gray-700 py-2">
-            @{`${formData.username}` || `inKognito`}
+          <p className="font-medium text-xl text-gray-700 dark:text-gray-200 py-4">
+            @{formData.username || "stephen_simon"}
           </p>
-          <p className="text-sm text-gray-700 py-1">
-            {formData.info || "We making digital Identity easier..."}
-          </p>
-        </div>
-        <div className="grid grid-cols-2 gap-2 py-2 w-full">
-          <div className="flex flex-row items-center space-x-2 bg-gray-100 px-3 py-2 rounded-lg">
-            <IconBriefcase width={17} height={17} />
-            <p className="text-sm">{formData.job_title || "Company"}</p>
-          </div>
-          <div className="flex flex-row items-center space-x-2 bg-gray-100 px-3 py-2 rounded-lg">
-            <IconMapPin width={17} height={17} />
-            <p className="text-sm">{countryCode}</p>
-          </div>
-        </div>
-        <div className="flex flex-col w-full ">
-          <div className="flex flex-row items-center bg-gray-100 space-x-2 px-3 py-2 rounded-lg">
-            <IconMail width={17} height={17} />
-            <p className="text-sm">{formData.email || "inKognito@gmail.com"}</p>
-          </div>
-          <div className="flex flex-row items-center bg-gray-100 mt-2 space-x-2 px-3 py-2 rounded-lg">
-            <IconPhone width={17} height={17} />
-            <p className="text-sm">
-              {formData.phone_number || "+00 123 456 789"}
-            </p>
-          </div>
-        </div>
-        <div className="inline-flex items-center justify-center w-full">
-          <hr className="w-64 h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
-          <span className="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
-            Skills
-          </span>
-        </div>
-        <div className="grid grid-cols-2 gap-2 w-full">
-          {formData.skills.map((skill: string, index: number) => (
-            <div
-              key={index}
-              className="flex flex-row items-center bg-gray-100 w-max space-x-2 px-3 py-2 rounded-lg"
-            >
-              <p className="text-xs">{skill}</p>
+        
+          <div className="w-full space-y-4">
+            <div className="flex items-center space-x-3 bg-white dark:bg-gray-600 px-4 py-2 rounded-lg">
+              <IconBriefcase width={20} height={20} />
+              <p className="text-sm">{formData.job_title || "Company"}</p>
             </div>
-          ))}
+            <div className="flex items-center space-x-3 bg-white dark:bg-gray-600 px-4 py-2 rounded-lg">
+              <IconMapPin width={20} height={20} />
+              <p className="text-sm">{countryCode}</p>
+            </div>
+            <div className="flex items-center space-x-3 bg-white dark:bg-gray-600 px-4 py-2 rounded-lg">
+              <IconMail width={20} height={20} />
+              <p className="text-sm">{formData.email || "stephensimongmail.com"}</p>
+            </div>
+            <div className="flex items-center space-x-3 bg-white dark:bg-gray-600 px-4 py-2 rounded-lg">
+              <IconPhone width={20} height={20} />
+              <p className="text-sm">{formData.phone_number || "+91 99929 XXXXX"}</p>
+            </div>
+          </div>
         </div>
-        <div className="inline-flex items-center justify-center w-full">
-          <hr className="w-64 h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
-          <span className="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
-            Socials
-          </span>
-        </div>
-        <div className="grid grid-cols-4 gap-2 pt-2 w-full">
-          {formData.x && (
-            <Link href={formData.x}>
-              <div className="flex flex-row w-11 h-11 cursor-pointer items-center bg-black p-3 rounded-full">
-                <IconBrandX width={24} height={24} color="white" />
+        
+        {/* Right column */}
+        <div className="w-2/3 p-6 flex flex-col">
+          <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Skills</h2>
+          <div className="grid grid-cols-3 gap-3 mb-8">
+            {Array.isArray(formData.skills) && formData.skills.map((skill: string, index: number) => (
+              <div
+                key={index}
+                className="flex items-center bg-gray-100 dark:bg-gray-700 px-3 py-2 rounded-lg"
+              >
+                <p className="text-sm">{skill}</p>
               </div>
-            </Link>
-          )}
-          {formData.instagram && (
-            <Link href={formData.instagram}>
-              <div className="flex flex-row w-11 h-11 cursor-pointer items-center bg-black p-3 rounded-full">
-                <IconBrandInstagram width={24} height={24} color="white" />
-              </div>
-            </Link>
-          )}
-          {formData.youtube && (
-            <Link href={formData.youtube}>
-              <div className="flex flex-row w-11 h-11 cursor-pointer items-center bg-black p-3 rounded-full">
-                <IconBrandYoutube width={24} height={24} color="white" />
-              </div>
-            </Link>
-          )}
-          {formData.tiktok && (
-            <Link href={formData.tiktok}>
-              <div className="flex flex-row w-11 h-11 cursor-pointer items-center bg-black p-3 rounded-full">
-                <IconBrandTiktok width={24} height={24} color="white" />
-              </div>
-            </Link>
-          )}
-          {formData.linkedin && (
-            <Link href={formData.linkedin}>
-              <div className="flex flex-row w-11 h-11 cursor-pointer items-center bg-black p-3 rounded-full">
-                <IconBrandLinkedin width={24} height={24} color="white" />
-              </div>
-            </Link>
-          )}
+            ))}
+          </div>
+          <h2 className="text-2xl font-semibold  text-gray-800 dark:text-gray-200">Bio</h2>
+       <div>   <pre className="text-md text-gray-600 dark:text-gray-300 mx-4 mb-6">
+            {formData.info || "Hey, I am Stephen Simon! "}
+          </pre>
+          </div>
+          <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Socials</h2>
+          <div className="flex space-x-4">
+            {formData.x && (
+              <Link href={formData.x}>
+                <div className="flex w-12 h-12 cursor-pointer items-center justify-center bg-black rounded-full">
+                  <IconBrandX width={24} height={24} color="white" />
+                </div>
+              </Link>
+            )}
+            {formData.instagram && (
+              <Link href={formData.instagram}>
+                <div className="flex w-12 h-12 cursor-pointer items-center justify-center bg-black rounded-full">
+                  <IconBrandInstagram width={24} height={24} color="white" />
+                </div>
+              </Link>
+            )}
+            {formData.youtube && (
+              <Link href={formData.youtube}>
+                <div className="flex w-12 h-12 cursor-pointer items-center justify-center bg-black rounded-full">
+                  <IconBrandYoutube width={24} height={24} color="white" />
+                </div>
+              </Link>
+            )}
+            {formData.tiktok && (
+              <Link href={formData.tiktok}>
+                <div className="flex w-12 h-12 cursor-pointer items-center justify-center bg-black rounded-full">
+                  <IconBrandTiktok width={24} height={24} color="white" />
+                </div>
+              </Link>
+            )}
+            {formData.linkedin && (
+              <Link href={formData.linkedin}>
+                <div className="flex w-12 h-12 cursor-pointer items-center justify-center bg-black rounded-full">
+                  <IconBrandLinkedin width={24} height={24} color="white" />
+                </div>
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </div>

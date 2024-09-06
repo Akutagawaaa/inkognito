@@ -107,7 +107,7 @@ export default function HeroSection() {
           className="mt-24"
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-12 text-center">
-            Discover inKognito Features
+            Discover in<span className="text-sky-600">Kognito</span> Features
           </h2>
           <div className={`grid ${isSmallScreen ? 'grid-cols-1 gap-6' : 'grid-cols-2 md:grid-cols-4 gap-4'}`}>
             {tabs.map((tab) => (
@@ -142,7 +142,7 @@ export default function HeroSection() {
               <p className="font-sans text-lg text-gray-600 mb-6">
                 Learn more about how {activeTab.name.toLowerCase()} can revolutionize your digital identity experience.
               </p>
-              <Button variant="outline" size="lg" className="rounded-full px-8 py-6">
+              <Button  variant="outline" size="lg" className="rounded-full text-white px-8 py-6  bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all duration-300">
                 Discover {activeTab.name}
               </Button>
             </div>
