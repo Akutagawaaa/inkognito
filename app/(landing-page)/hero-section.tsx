@@ -31,7 +31,7 @@ const tabs = [
     description: 'Control who sees your information',
     color: 'bg-rose-100',
     textColor: 'text-rose-600',
-    image: '/images/privacy1.jpeg',
+    image: '/images/privacy3.png',
   },
   {
     icon: <IconBriefcase className="w-6 h-6 text-amber-600" />,
