@@ -7,21 +7,21 @@ import { PrivyProvider } from "@privy-io/react-auth";
 const font = Outfit({ subsets: ["latin"] });
 
 const BitTorrent = defineChain({
-  id: 1029,
-  name: "BNB Smart Chain Testnet",
-  network: "BNB Smart Chain Testnet",
+  id: 1337,
+  name: "Sepolia test network",
+  network: "Sepolia test network",
   nativeCurrency: {
     decimals: 18,
-    name: "BNB Smart Chain Testnet",
-    symbol: "tBNB",
+    name: "Sepolia test network",
+    symbol: "SepoliaETH",
   },
   rpcUrls: {
     default: {
-      http: ["https://pre-rpc.bt.io/"],
+      http: ["https://sepolia.infura.io/v3/"],
     },
   } as any,
   blockExplorers: {
-    default: { name: "Explorer", url: "https://testnet.bscscan.com" },
+    default: { name: "Explorer", url: "https://sepolia.etherscan.io" },
   },
 }) as any;
 
@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <PrivyProvider
-          appId="clwci9fzm00w7ro85bx6jarr5"
+          appId="cm0r9fa8y00dhqgi5j7jkgiia"
           config={{
             appearance: {
               theme: "light",

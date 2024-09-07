@@ -190,7 +190,7 @@ export default function CreateProfile() {
         method: "POST",
         headers: {
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiJkMWJjNzRiNy00YWUzLTQ0ZmUtYjU1NS0wNGVkOTRlMTY1NzAiLCJlbWFpbCI6Im1lbmRzYWxiZXJ0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaW5fcG9saWN5Ijp7InJlZ2lvbnMiOlt7ImlkIjoiRlJBMSIsImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxfV0sInZlcnNpb24iOjF9LCJtZmFfZW5hYmxlZCI6ZmFsc2UsInN0YXR1cyI6IkFDVElWRSJ9LCJhdXRoZW50aWNhdGlvblR5cGUiOiJzY29wZWRLZXkiLCJzY29wZWRLZXlLZXkiOiJiOWI4NzA2ZTQ4MDMwYzE1MzRhZCIsInNjb3BlZEtleVNlY3JldCI6ImM5N2M4ODgyZDFiZDg1MDY5ZmU3M2Q0YmRkODhmMWZiMzFiYzU0YTQ2NjJkMGQ1Njk5Mjg4NzAxYjUxZThkMjAiLCJpYXQiOjE3MTYwNzQ3Mzd9.uL0vggNCb0Y0Zz42yQiZ4fBwG3kDAlGotZ2TgsMvyLc",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiI3MjdiMjg5Ny05NWZiLTRhMzUtOTQyYy03OWI3YTc3MTc3ODUiLCJlbWFpbCI6InJwNTgwMDdAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBpbl9wb2xpY3kiOnsicmVnaW9ucyI6W3siZGVzaXJlZFJlcGxpY2F0aW9uQ291bnQiOjEsImlkIjoiRlJBMSJ9LHsiZGVzaXJlZFJlcGxpY2F0aW9uQ291bnQiOjEsImlkIjoiTllDMSJ9XSwidmVyc2lvbiI6MX0sIm1mYV9lbmFibGVkIjpmYWxzZSwic3RhdHVzIjoiQUNUSVZFIn0sImF1dGhlbnRpY2F0aW9uVHlwZSI6InNjb3BlZEtleSIsInNjb3BlZEtleUtleSI6IjYyMzE5YzY1ZjE2MWFmMTBlMGU3Iiwic2NvcGVkS2V5U2VjcmV0IjoiNDJiNjk3ZWU5MzI4MTIwZmFmY2E4YWYyM2ExM2JlZjBhMWJjY2E1OTlhZmQ1ZGYwZTZhNzgyMDg2Njk3MzhlNiIsImV4cCI6MTc1NzE5NDEwM30.poPYVWFSIWv2p3xZNcOpEkmwhKLNXLe__MaKgKXE0YM",
         },
         body: form,
       };
@@ -284,19 +284,19 @@ export default function CreateProfile() {
   return (
     <div
       className="flex flex-col md:flex-row items-center md:items-start justify-between 
-    space-y-4 md:space-y-0 md:space-x-10 pt-20 pb-20 px-4 md:px-16"
+    space-y-4 md:space-y-0 md:space-x-10 pt-12 pb-20 px-10"
     >
       <div>
-        <div className="md:text-4xl text-xl font-medium w-3/3 pb-3">
-          Creating a DID is a breeze with{" "}
-          <span className="text-sky-500">identiFi</span>
+        <div className="md:text-4xl text-xl text-center  pb-5">
+        Empowering Your Digital Identity with{" "}
+         <span className="font-bold">in<span className="text-sky-500">Kognito</span></span> 
         </div>
         <Toaster />
         <UserProfileDisplay formData={formData} countryCode={countryCode} />
       </div>
 
       <Form {...form}>
-        <div className="w-full md:w-2/3">
+        <div className="w-full pt-20 md:w-2/3">
           {!submitted ? (
             <form onSubmit={onSubmit} className="space-y-4 w-full">
               <FormFields

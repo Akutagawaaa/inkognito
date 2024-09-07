@@ -122,11 +122,11 @@ const UserProfile = (params: any) => {
             </div>
             <div className="flex items-center space-x-2">
               <IconMail className="text-gray-500" />
-              <span>{formData.email || "email@domain.com"}</span>
+              <span>{formData.email || "stephen.simon@domain.com"}</span>
             </div>
             <div className="flex items-center space-x-2">
               <IconPhone className="text-gray-500" />
-              <span>{formData.phone_number || "+00 123 456 789"}</span>
+              <span>{formData.phone_number || "+91 99929 XXXX"}</span>
             </div>
           </div>
 

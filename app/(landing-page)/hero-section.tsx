@@ -31,7 +31,7 @@ const tabs = [
     description: 'Control who sees your information',
     color: 'bg-rose-100',
     textColor: 'text-rose-600',
-    image: '/images/privacy1.jpeg',
+    image: '/images/privacy3.png',
   },
   {
     icon: <IconBriefcase className="w-6 h-6 text-amber-600" />,
@@ -49,23 +49,20 @@ export default function HeroSection() {
 
   return (
     <div className="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
-      <div className="container mx-auto px-4 py-12 md:py-24">
+      <div className="container mx-auto px-2 py-12 md:py-24">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <motion.div
+          <motion.div className='flex flex-col items-center'
             initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}  
             transition={{ duration: 0.5 }}
           >
-            <h1 className="font-josefin sans text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Your Digital Identity,{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-                Reinvented
+            <h3 className="font-josefin sans text-4xl mb-3 text-center  font-bold mb-6 leading-tight">
+            Empowering  your digital  identity with{' '}  <br />
+              <span className="text-transparent text-5xl  bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+                inKognito
               </span>
-            </h1>
-            <p className="font-sans text-xl md:text-2xl mb-8 text-gray-600">
-              Create Once, Identify Everywhere with{' '}
-              <span className="font-medium  text-purple-600">inKognito</span>
-            </p>
+            </h3>
+           
             <Link href={"/onboard"}>
               <Button size="lg" className="text-lg rounded-full px-8 py-6 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all duration-300">
                 Create Identity
@@ -107,7 +104,7 @@ export default function HeroSection() {
           className="mt-24"
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-12 text-center">
-            Discover inKognito Features
+            Discover in<span className="text-sky-600">Kognito</span> Features
           </h2>
           <div className={`grid ${isSmallScreen ? 'grid-cols-1 gap-6' : 'grid-cols-2 md:grid-cols-4 gap-4'}`}>
             {tabs.map((tab) => (
@@ -142,7 +139,7 @@ export default function HeroSection() {
               <p className="font-sans text-lg text-gray-600 mb-6">
                 Learn more about how {activeTab.name.toLowerCase()} can revolutionize your digital identity experience.
               </p>
-              <Button variant="outline" size="lg" className="rounded-full px-8 py-6">
+              <Button  variant="outline" size="lg" className="rounded-full text-white px-8 py-6  bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all duration-300">
                 Discover {activeTab.name}
               </Button>
             </div>

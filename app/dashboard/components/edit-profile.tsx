@@ -284,7 +284,7 @@ export default function EditProfile() {
       <div>
         <div className="md:text-4xl text-xl font-medium w-3/3 pb-3">
           Editing your DID is easy with{" "}
-          <span className="text-sky-500">identiFi</span>
+        <span>in<span className="text-sky-500">Kognito</span></span>  
         </div>
         <Toaster />
         <UserProfileDisplay formData={formData} countryCode={countryCode} />

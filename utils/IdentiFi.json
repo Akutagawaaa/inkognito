@@ -1,7 +1,8 @@
 {
   "_format": "hh-sol-artifact-1",
-  "contractName": "IdentiFi",
-  "sourceName": "contracts/identiFi.sol",
+  "contractName": "inKognito",
+
+  "sourceName": "contracts/IdentiFi.sol",
   "abi": [
     {
       "inputs": [
