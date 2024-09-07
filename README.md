@@ -1,145 +1,71 @@
-<div align="center">
-  <br />
-    <a href="https://www.youtube.com/watch?v=OpL5Q7Zc7qk" target="_blank">
-      <img src="https://i.postimg.cc/26LnpVqZ/test1-copy.jpg" alt="Project Banner">
-    </a>
-  
-  <br />
+<h1>inKognito</h1>
+<p>Inkognito is a decentralized identity management system that leverages blockchain technology to offer secure, self-sovereign identity management. This project is built on the Ethereum Sepolia test network and uses MetaMask to interact with the blockchain, providing a robust and transparent way for individuals to control their personal data.</p>
 
-  <div>
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
-    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-  </div>
+<h2>Key Features</h2>
+<p>Self-Sovereign Identity: Empower users to control their own identity, without relying on centralized intermediaries.
+<p>Blockchain Security: Use blockchain technology to ensure immutability, privacy, and security of personal data.</p>
+Ethereum Sepolia: Interact with the Ethereum blockchain using the Sepolia test network, allowing for testing and development without real-world costs.
+Next.js Framework: A powerful and modern front-end framework for building the decentralized application (dApp).</p>
+<h3>Blockchain Description</h3>
+<p>Inkognito is integrated with the Ethereum Sepolia test network, allowing developers to experiment with blockchain-based identity solutions. Sepolia is a proof-of-stake (PoS) testnet that mimics Ethereum's main network but uses test ether, making it ideal for testing decentralized applications (dApps) without any financial risk. MetaMask, a browser-based Ethereum wallet, is used for users to interact with the blockchain, including signing transactions and managing identity credentials.</p>
 
-  <h3 align="center">identiFi</h3>
+<h3>How the Blockchain is Used</h3>
+<p>Decentralized Identity Storage: User identity information is stored on the blockchain to ensure it cannot be tampered with or manipulated.
+Ownership of Data: Users have full ownership of their identity, with the ability to manage access and permissions using smart contracts.</p>
+<h3>Prerequisites</h3>
+<p>Before running this project, ensure you have the following installed:
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@albertmends" target="_blank"><b>Your YouTube Channel</b></a>. Join the community!
-    </div>
-</div>
+<p>Node.js (v14 or above)</p>
+<p>MetaMask browser extension</p>
+<p>Git</p>
+<p>Next.js (if not globally installed)</p>
+<p>yarn/npm </p>
 
-## 📋 <a name="table">Table of Contents</a>
+<h2>Getting Started </h2>
+<h4>1. Clone the Repository</h4>
+<h5>bash</h5>
+<p>git clone https://github.com/Akutagawaaa/inkognito.gitc</p>
+<p>cd inkognito</p>
+<h5>2. Install Dependencies</h5>
+<p>yarn install </p>
+<h5>3. Configure MetaMask with Ethereum Sepolia</h5>
+<p>Install the MetaMask browser extension from here.</p>
+<p>After setting up your MetaMask wallet, you need to add the Sepolia network manually:</p>
+<p>Open MetaMask, click on the network dropdown (which will likely show "Ethereum Mainnet").</p>
+<p>Select Add Network.</p>
+<p>Input the following settings:</p>
+<p>Network Name: Sepolia Test Network</p>
+<p>New RPC URL: https://rpc.sepolia.org</p>
+<p>Chain ID: 11155111</p>
+<p>Currency Symbol: ETH</p>
+<p>Block Explorer URL: https://sepolia.etherscan.io</p>
+<p>Save the settings.</p>
+<p>Fund your Sepolia account with test Ether using a Sepolia faucet.</p>
+<h5>4. Run the Next.js Project</h5>
+<p>Start the development server using the following command:</p>
+<p>npm run build</p>
+<p>Start running the server using the following command:</p>
+<p>npm run start</p>
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Smart Contract Overview](#smart-contract-overview)
-6. 🖼️ [Storing Images on IPFS](#storing-images-on-ipfs)
-7. 🚀 [More](#more)
+<p>The app should now be running at http://localhost:3000.</p>
 
-## 🚨 Tutorial
+<h3>Interacting with the Blockchain</h3>
+<p>Open MetaMask and switch to the Sepolia network.</p>
+<p>Connect your MetaMask wallet to the application by authorizing access.</p>
+<p>Execute transactions related to identity management directly on the blockchain through the interface.</p>
+<p>Folder Structure</p>
+<p>.</p>
+<p>├── components       # Reusable UI components</p>
+<p>├── pages            # Main pages for the Next.js application</p>
+<p>├── public           # Static assets</p>
+<p>├── smart_contracts  # Smart contracts used in the project</p>
+<p>├── styles           # Global and component-specific styles</p>
+<p>└── utils            # Utility functions, blockchain interactions</p>
+<h4>License</h4>
+<p>This project is licensed under the MIT License - see the LICENSE file for details.</p>
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@albertmends/videos" target="_blank"><b>Code with Albert</b></a>.
+<h4>Contributing</h4>
+<p>We welcome contributions! Please read our Contributing Guidelines for how to get involved.</p>
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
-
-## <a name="introduction">🤖 Introduction</a>
-
-The current digital identity landscape is often fragmented and insecure, making it challenging for users to manage and verify their identities across different platforms. identiFi was inspired by the potential of blockchain technology to create a unified, secure, and verifiable digital identity solution that empowers users to manage their identities seamlessly.
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- Next.js
-- TypeScript
-- Solidity
-- Hardhat
-- Chainlink VRF
-- IPFS
-
-## <a name="features">🔋 Features</a>
-
-- **Decentralized Identifiers (DIDs):** Create and manage unique DIDs on the blockchain.
-- **Identity Verification:** Submit identity documents for verification by trusted third parties.
-- **Credential Verification:** Verify the authenticity of credentials.
-- **User Profile Management:** Update personal details and manage credentials easily.
-- **Privacy Controls:** Control who can access identity information and under what circumstances.
-- **Security Measures:** Strong security measures including encryption and secure key management.
-- **Social Media Integration:** Share your verified digital identity on various social media platforms.
-- **Profile Editing:** Easily update and manage your digital identity profile.
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/)
-- [Hardhat](https://hardhat.org/)
-- Metamask (or any other Ethereum wallet)
-- Chainlink VRF setup
-- IPFS setup
-
-**Cloning the Repository**
-
-```bash
-git clone https://github.com/blocklinklabs/IdentiFi.git
-cd identifi
-```
-
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
-npm install
-```
-
-**Compile the Contracts**
-
-```bash
-npx hardhat compile
-```
-
-**Deploy the Contracts**
-
-```bash
-npx hardhat run scripts/deploy.js --network yourNetwork
-```
-
-**Run the Development Server**
-
-```bash
-npm start
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
-
-## <a name="smart-contract-overview">🕸️ Smart Contract Overview</a>
-
-The main contract, `IdentiFi`, manages user profiles, DIDs, and credentials.
-
-### Key Functions
-
-- **createUser:** Creates a new user profile and requests a new DID using Chainlink VRF.
-- **editUser:** Edits an existing user profile.
-- **getUserByUsername:** Retrieves user information by username.
-- **getUserByAddress:** Retrieves user information by address.
-- **addJob:** Adds a job to the user's profile.
-- **getJobs:** Retrieves jobs associated with a user.
-- **setVisibility:** Sets visibility preferences for user profile information.
-- **getVisibility:** Gets visibility preferences for user profile information.
-- **batchCreateUsers:** Batch creates multiple user profiles using Monobean.
-
-## <a name="storing-images-on-ipfs">🖼️ Storing Images on IPFS</a>
-
-User images are uploaded and stored on IPFS. This ensures that images are stored in a decentralized manner, enhancing security and accessibility.
-
-## <a name="more">🚀 More</a>
-
-For more information and additional resources, check out our YouTube channel and join our Discord community for support and discussions.
-
-We welcome contributions to identiFi! To contribute, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them.
-4. Push your changes to your fork.
-5. Submit a pull request to the main repository.
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+<h4>Contact</h4>
+<p>For any issues or inquiries, please open an issue or reach out to the maintainer.</p>
